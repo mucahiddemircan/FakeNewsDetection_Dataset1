@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.container {
+    width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .block-1 {
+        background-color: #DBE2EF;
+        margin: auto;
+        margin-top: 5px;
+        width: 99vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 0 10px 0;
+        border: 2px solid #112D4E;
+        border-radius: 15px;
+
+        .custom-checkbox-size {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .custom-checkbox-nitelik {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .custom-checkbox-algoritma {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .block1-block2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+        position: relative;
+        .block-2 {
+            margin-top: 50px;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: first baseline;
+            .not{
+                display: none;
+            }
+            .dvm-block {
+                position: absolute;
+                left: 0px;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: last baseline;
+                margin: 80px 10px 5px 10px;
+                .custom-checkbox-dvm{
+                    background-color: #DBE2EF;
+
+                    border: 1px solid #112D4E;
+                    padding: 5px 10px 15px 10px;
+                    border-radius: 10px;
+                }
+            }
+
+            .ysa-block {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 80px 10px 5px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: last baseline;
+                .custom-checkbox-ysa{
+                    background-color: #DBE2EF;
+                    border: 2px solid #112D4E;
+                    padding: 5px 10px 15px 10px;
+                    border-radius: 10px;
+                }
+            }
+
+            .knn-block {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                margin: 80px 10px 5px 10px;
+                .custom-checkbox-knn{
+                    background-color: #DBE2EF;
+                    border-radius: 10px;
+                    border: 2px solid #112D4E;
+                    padding: 5px 10px 15px 10px;
+                }
+            }
+        }
+
+        .block-3-result {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .block-3 {
+                background-color: #DBE2EF;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                border:2px solid #112D4E;
+                border-radius: 15px;
+                padding: 20px 15px 5px 15px;
+                right: 10px;
+                top: 50px;
+                img {
+                    height: 360px;
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            font-family: "Mulish", sans-serif;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.header {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+}
+.header-1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.main-header{
+    margin: 10px auto 20px auto;
+    width: 100vw;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-left: 40%;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    color: #112D4E;
+}
+
+.checkbox-item {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: "Mulish", sans-serif;
+
+    label {
+        border-top: 1px solid #112D4E;
+        border-bottom: 1px solid #112D4E;
+        margin-left: 5px;
+    }
+}
+
+button{
+    margin-right: -15px;
+
+    font-family: "Ubuntu", sans-serif;
+    background-color: transparent;
+    color: green;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid green;
+    transition: all linear 0.15s;
+    &:hover{
+        color: red;
+    }
+}
+
+.not{
+    overflow: visible;
+    padding: 0;
+    border: none;
+    display: none;
+}
